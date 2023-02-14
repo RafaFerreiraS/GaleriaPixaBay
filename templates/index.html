@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Galeria PIXABAY</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Galeria PIXABAY</h1>
+
+        <form action="/" method="get">
+            <label for="query">Procurar Por:</label>
+            <input type="text" id="query" name="query">
+            <button type="submit">Procurar</button>
+        </form>
+
+        <div class="gallery">
+            {% for url in image_urls %}
+                <img src="{{ url }}" alt="Imagem de gato">
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

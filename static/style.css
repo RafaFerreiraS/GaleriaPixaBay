@@ -1,0 +1,59 @@
+/* Estilo do formulário de pesquisa */
+form {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #252729;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #FF69B4;
+}
+
+/* Estilo da galeria de imagens */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -10px;
+}
+
+.gallery img {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+body {
+  background: linear-gradient(to bottom right, #E0FFFF, #FAFAD2);
+}
